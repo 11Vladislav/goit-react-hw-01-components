@@ -3,6 +3,7 @@
   border-radius: 6px;
   max-width: 300px;
   margin-bottom: 30px;
+  background-color: #fff;
 }
 
 .name,
@@ -52,5 +53,5 @@
 
 .quantity {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
 }
