@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import styles from './FriendsListItem.module.css';
 
-export const FriendsListItem = ({ name, avatar, isOnline, id }) => {
+export const FriendsListItem = ({ name, avatar, isOnline}) => {
     return ( 
-        <li className={styles.item} key={id} >
+        <li className={styles.item}>
             <span className={styles.status}
                   style={{ backgroundColor: isOnline ? 'green' : 'red' }}>
             </span>    
@@ -17,12 +17,7 @@ export const FriendsListItem = ({ name, avatar, isOnline, id }) => {
 }
 
 FriendsListItem.propTypes = {
-    friends: PropTypes.arrayOf(
-        PropTypes.shape({
-            name: PropTypes.string.isRequired,
-            avatar: PropTypes.string.isRequired,
-            isOnline: PropTypes.bool.isRequired,
-            id: PropTypes.number.isRequired,
-        }),
-    )
+    name: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired
 }
